@@ -1,7 +1,10 @@
 .mainContainer {
     display: flex;
     color: white;
-    /* background-color: #010231; */
+    background-color: #010231;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
 }
 
 .brand {
@@ -34,5 +37,5 @@
 }
 
 .mlhLogo {
-    margin-right: 2vw;
+    flex-grow: 1;
 }

@@ -15,11 +15,24 @@
 }
 
 .rect {
-    background-color: #D9D9D9;
+    background-color: none;
+    background-color: rgba(217, 217, 217, 0.25);
     width: 75vw;
     height: 50vh;
     margin: auto;
     margin-top: 10px;
-    opacity: 25%;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    column-gap: 3vh;
+}
+
+.text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.8vh;
+    color: rgba(255, 255, 255, 100);
+    padding: 5px;
 }

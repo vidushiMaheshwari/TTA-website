@@ -9,7 +9,6 @@ function Home() {
     return (
       <div>
         <div className={classes.mainContainer}>
-          <NavBar />
           <div className={classes.imageBackground}>
             <div className={classes.content}>
               <div>
