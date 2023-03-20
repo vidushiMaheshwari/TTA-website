@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .mainContainer{
+    overflow: hidden;
     background: linear-gradient(#010231, #01023B);
-    height: 100vh;
-    width: 100vw;
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100%;
 }
 
 .imageBackground {

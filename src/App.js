@@ -7,12 +7,12 @@ import NavBar from './screens/NavBar/NavBar';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <NavBar />
       <Home />
       <About />
       <Challenges />
-    </>
+    </div>
   );
 }
 
