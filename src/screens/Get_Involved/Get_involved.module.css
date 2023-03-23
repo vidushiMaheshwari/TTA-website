@@ -1,0 +1,38 @@
+.mainContainer {
+    background: linear-gradient(#010234, #0003A3);
+    height: 100vh;
+    width: 100vw;
+}
+.navBar {
+    background-color: none;
+}
+.brand {
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.7vh;
+}
+
+.rect {
+    background-color: none;
+    background-color: rgba(217, 217, 217, 0.25);
+    width: 75vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    column-gap: 3vh;
+}
+
+.text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.8vh;
+    color: rgba(255, 255, 255, 100);
+    padding: 5px;
+}
