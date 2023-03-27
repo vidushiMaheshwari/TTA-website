@@ -33,8 +33,8 @@ function NavBar() {
             <a href="#schedule" className={classes.link}>
               SCHEDULE
             </a>
-            <a className={classes.link}>FAQ</a>
-            <a className={classes.link}>GET INVOLVED</a>
+            <a href="faq" className={classes.link}>FAQ</a>
+            {/* <a className={classes.link}>GET INVOLVED</a> */}
             <a href="#sponsors" className={classes.link}>
               SPONSORS
             </a>
@@ -91,7 +91,7 @@ function NavBar() {
                 <a href="#schedule" className={classes.link}>
                   SCHEDULE
                 </a>
-                <a className={classes.link}>FAQ</a>
+                <a href="#faq" className={classes.link}>FAQ</a>
                 <a className={classes.link}>GET INVOLVED</a>
                 <a href="#sponsors" className={classes.link}>
                   SPONSORS

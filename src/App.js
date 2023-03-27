@@ -6,6 +6,7 @@ import Challenges from './screens/Challenges/Challenges';
 import NavBar from './screens/NavBar/NavBar';
 import Schedule from './screens/Schedule/Schedule';
 import Sponsors from './screens/Sponsors/Sponsors';
+import FAQs from './screens/FAQs/FAQs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <About  />
         <Challenges  />
+        <FAQs />
         <Schedule  />
         <Sponsors  />
     </div>

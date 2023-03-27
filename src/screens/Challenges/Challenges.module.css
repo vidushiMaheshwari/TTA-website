@@ -1,7 +1,6 @@
 .mainContainer {
-    background: linear-gradient(#5D3192, #2C459D);
-    min-height: fit-content;
-    height: 90vh;
+    background: linear-gradient(#0003A3, #5D3192);
+    min-height: 90vh;
     width: 100%;
 }
 

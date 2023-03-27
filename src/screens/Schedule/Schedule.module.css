@@ -1,5 +1,5 @@
 .mainContainer {
-    background: linear-gradient(#2C459D, #183086);
+    background: linear-gradient(#183086, #000156);
     height: 90vh;
     width: 100%;
 }
@@ -63,6 +63,7 @@
     width: 30vw;
     margin: auto;
     color: #d9d9d9;
+    font-size: 2vh;
 }
 
 .table th:nth-child(1) {

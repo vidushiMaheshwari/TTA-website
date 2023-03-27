@@ -37,7 +37,7 @@ function Home() {
                   >
                     Register
                   </a>
-                  <Button className={classes.button}> FAQs </Button>
+                  <Button className={classes.button} href="#faq"> FAQs </Button>
                 </div>
               </div>
             </div>
