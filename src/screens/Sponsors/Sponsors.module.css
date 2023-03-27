@@ -1,0 +1,23 @@
+.mainContainer {
+    background: linear-gradient(#000156, #030011);
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    color: white;
+    padding-top: 15vh;
+    font-size: 5vh;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.sponsorBlock {
+    background-color: #d9d9d9;
+    width: 50vw;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 40px;
+    box-shadow: 12px 12px 2px 1px rgba(240, 230, 140, .2);
+}
