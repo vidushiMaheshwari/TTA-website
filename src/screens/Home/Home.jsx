@@ -1,15 +1,22 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Home.module.css"
-import {Button} from "react-bootstrap"
+import {Button, Image} from "react-bootstrap"
 import NavBar from "../NavBar/NavBar";
-import background from "../../public/hero-background.svg";
+import background from "../../public/image6.png";
 
 function Home() {
+
     return (
-      <div>
+      <div id="home">
         <div className={classes.mainContainer}>
-          <div className={classes.imageBackground}>
+          <div className={classes.background}>
+            {/*store backgrounds */}
+            <div className={classes.colorBackground} />
+            <div className={classes.imageBackground} />
+          </div>
+
+          <div className={classes.body}>
             <div className={classes.content}>
               <div>
                 <b style={{ fontSize: "4vh" }}>Tech Together Atlanta </b> <br />
@@ -20,8 +27,16 @@ function Home() {
               <div className={classes.bigRect}>
                 <p className={classes.bigRectTitle}>Come One, Come ALL!</p>
                 <div className={classes.buttonsContainer}>
-                  <Button className={classes.button}> Challenges </Button>
-                  <Button className={classes.button}> Register </Button>
+                  <a className={classes.button} href="#challenges">
+                    Challenges
+                  </a>
+                  <a
+                    className={classes.button}
+                    href="https://hackp.ac/techtogetheratlanta"
+                    target="_blank"
+                  >
+                    Register
+                  </a>
                   <Button className={classes.button}> FAQs </Button>
                 </div>
               </div>

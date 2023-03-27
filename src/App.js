@@ -4,14 +4,18 @@ import './App.css';
 import About from './screens/About/About';
 import Challenges from './screens/Challenges/Challenges';
 import NavBar from './screens/NavBar/NavBar';
+import Schedule from './screens/Schedule/Schedule';
+import Sponsors from './screens/Sponsors/Sponsors';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      <About />
-      <Challenges />
+        <NavBar />
+        <Home />
+        <About  />
+        <Challenges  />
+        <Schedule  />
+        <Sponsors  />
     </div>
   );
 }

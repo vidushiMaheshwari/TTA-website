@@ -6,10 +6,10 @@ function Challenges() {
     const [microsoftCloudReadMore, setMCloudReadMore] = useState(false);
     const [microsoftPassportReadMore, setMPassportReadMore] = useState(false);
     const [capitalOneReadMore, setCapitalOneReadMore] = useState(false);
-    const [mCloudPopup, setMCloudPopup] = useState(true);
+    const [mCloudPopup, setMCloudPopup] = useState(false);
 
     return (
-      <div className={classes.mainContainer}>
+      <div className={classes.mainContainer} id="challenges">
         <div className={classes.title}>Challenges 💪</div>
         <Popup show={mCloudPopup} setShow={setMCloudPopup} />
         <div className={classes.cardContainer}>

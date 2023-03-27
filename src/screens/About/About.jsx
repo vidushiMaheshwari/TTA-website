@@ -2,11 +2,10 @@ import React from "react"
 import classes from "./About.module.css";
 import { Image } from "react-bootstrap";
 import logo from "../../public/tta-logo.png";
-import NavBar from "../NavBar/NavBar";
 
 function About() {
     return (
-      <div className={classes.mainContainer}>
+      <div className={classes.mainContainer} id="about">
         <div className={classes.brand}>
           <div style={{ width: "7vh" }}>
             <Image src={logo} style={{ width: "100%", height: "auto" }} />
