@@ -1,7 +1,9 @@
 .mainContainer {
+    overflow-x: hidden;
     background: linear-gradient(#010234, #0003A3);
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 100%;
+    padding-top: 10vh;
 }
 .navBar {
     background-color: none;

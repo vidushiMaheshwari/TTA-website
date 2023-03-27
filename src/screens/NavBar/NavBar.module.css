@@ -4,15 +4,18 @@
     background-color: #010231;
     position: fixed;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
+    z-index: 100;
+    /* display: none; */
 }
 
 .brand {
-    margin-left: 1.5vw;
+    padding-left: 1.5vw;
+    text-decoration: none;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-    margin-top: 1vh;
+    padding-top: 1vh;
     font-size: x-large;
 }
 
@@ -26,7 +29,7 @@
     text-decoration: none;
     color: white;
     margin-top: 2vh;
-    margin-left: 4vw;
+    padding-left: 4vw;
     font-weight: 600;
     font-size: x-large;
     text-align: center;
@@ -37,5 +40,33 @@
 }
 
 .mlhLogo {
+    /* margin-right: 4px; */
     flex-grow: 1;
+}
+
+.mainVertical {
+    background-color: #010231;
+    color: white;
+    padding-right: 2vw;
+    z-index: 100;
+    position: fixed;
+}
+
+.vertical {
+    display: inline-block;
+    display: none;
+}
+
+.menuButton {
+    background-color: #010231;
+    border: none;
+    cursor: pointer;
+    flex-grow: -1;
+}
+
+.dropDown {
+    width: 100vw;
+    height: 15vh;
+    background-color: red;
+    position: relative;
 }
