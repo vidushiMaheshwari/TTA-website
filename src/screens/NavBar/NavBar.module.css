@@ -6,7 +6,6 @@
     height: 10vh;
     width: 100%;
     z-index: 100;
-    /* display: none; */
 }
 
 .brand {
@@ -44,29 +43,31 @@
     flex-grow: 1;
 }
 
-.mainVertical {
-    background-color: #010231;
-    color: white;
-    padding-right: 2vw;
-    z-index: 100;
-    position: fixed;
-}
-
 .vertical {
-    display: inline-block;
-    display: none;
+    position: absolute;
+    display: flex;
+    width: 100%;
 }
 
-.menuButton {
-    background-color: #010231;
-    border: none;
-    cursor: pointer;
-    flex-grow: -1;
+.vertNavButton {
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+    position: absolute;
 }
 
 .dropDown {
-    width: 100vw;
-    height: 15vh;
+    width: 50vw;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    /* margin-left: auto;
+    margin-right: 0; */
     background-color: red;
-    position: relative;
+    z-index: 100;
+}
+
+.vertContent {
+    flex-direction: column;
 }

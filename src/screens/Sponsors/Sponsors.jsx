@@ -4,6 +4,7 @@ import { Image } from "react-bootstrap";
 import balsamiq from "../../public/balsamiq-logo.png";
 import microsoft from "../../public/Microsoft-logo.jpg";
 import capital_one from "../../public/CapitalOneLogo.png";
+import Footer from "../Footer/Footer";
 
 function Sponsors() {
     return (
@@ -19,6 +20,9 @@ function Sponsors() {
           <div>
             <Image src={capital_one} style={{ height: "10vh" }} />
           </div>
+        </div>
+        <div className={classes.footer}>
+          <Footer />
         </div>
       </div>
     );

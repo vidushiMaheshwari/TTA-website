@@ -1,7 +1,8 @@
 .mainContainer {
-    background: linear-gradient(#000156, #030011);
+    background: linear-gradient(#05088c, #000156);
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .title {
@@ -20,4 +21,10 @@
     margin-top: 5vh;
     border-radius: 40px;
     box-shadow: 12px 12px 2px 1px rgba(240, 230, 140, .2);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

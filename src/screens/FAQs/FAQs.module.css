@@ -1,7 +1,6 @@
 .mainContainer {
     background: linear-gradient(#5D3192, #183086);
-    min-height: fit-content;
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
 }
 
@@ -20,7 +19,6 @@
 
 .question {
     cursor: pointer;
-    /* background: linear-gradient(#9a6ec6, #5d3192); */
     background-color: #fff;
     margin-bottom: 3vh;
     font-size: 2vh;
