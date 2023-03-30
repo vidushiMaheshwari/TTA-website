@@ -1,11 +1,24 @@
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Home.module.css"
-import {Button, Image} from "react-bootstrap"
-import NavBar from "../NavBar/NavBar";
-import background from "../../public/image6.png";
+import {Button} from "react-bootstrap"
+import BigBackground from "../../public/image6.png";
+import smallBackground from "../../public/smaller-background.png"
 
 function Home() {
+  const [width, setWidth] = useState(window.innerWidth);
+   const imgUrl = width >= 650 ? BigBackground : smallBackground;
+
+  useEffect(() => {
+     const handleWindowResize = () => {
+       setWidth(window.innerWidth);
+     };
+    window.addEventListener("resize", handleWindowResize);
+      return () => {
+        window.removeEventListener("resize", handleWindowResize);
+      };  
+
+  }, []);
 
     return (
       <div id="home">
@@ -13,7 +26,16 @@ function Home() {
           <div className={classes.background}>
             {/*store backgrounds */}
             <div className={classes.colorBackground} />
-            <div className={classes.imageBackground} />
+            <div
+              // style={{
+              //   background: `url(${imgUrl}) no-repeat`,
+              //   backgroundSize: "100vw 70vh",
+              //   height: "100vh",
+              //   width: "100vw",
+              //   marginTop: "20vh"
+              // }}
+              className={classes.imageBackground}
+            />
           </div>
 
           <div className={classes.body}>
@@ -37,7 +59,10 @@ function Home() {
                   >
                     Register
                   </a>
-                  <Button className={classes.button} href="#faq"> FAQs </Button>
+                  <Button className={classes.button} href="#faq">
+                    {" "}
+                    FAQs{" "}
+                  </Button>
                 </div>
               </div>
             </div>

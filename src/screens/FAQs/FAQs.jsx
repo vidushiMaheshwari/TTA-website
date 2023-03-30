@@ -117,28 +117,7 @@ function FAQs() {
           </div>
         </div>
 
-        <div className={classes.question} onClick={() => setHide5(!hide5)}>
-          <div className={classes.questionContent}>
-            <div className={classes.questionText}>
-              Where do I submit my projects/ solutions?
-            </div>
-            <div className={classes.dropImageDiv}>
-              {!hide1 && (
-                <Image src={down_arrow} className={classes.dropImage}></Image>
-              )}
-              {hide1 && (
-                <Image src={up_arrow} className={classes.dropImage}></Image>
-              )}
-            </div>
-          </div>
-          <div
-            style={{ display: hide5 ? "block" : "none" }}
-            className={classes.answer}
-          >
-            Your projects will be submitted through [this link] and much more
-            information. Stay tuned.
-          </div>
-        </div>
+       
       </div>
     </div>
   );

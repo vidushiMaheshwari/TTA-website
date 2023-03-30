@@ -32,22 +32,62 @@
     display: grid;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 2.5vh;
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-/* .card:hover {
+.mobileCard {
+    background-color: #d9d9d9;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 27vh;
+    width: 47vh;
+    margin: 50px;
+    text-align: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 2.5vh;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
   cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
-} */
+  background-color: #1d1d23;
+  transform: rotateY(180deg);
+  color: #d9d9d9;
+}
+
+.front:hover {
+    transform: rotateY(180deg);
+}
 
 .readMore {
     font-size: 2vh;
     animation: ease-in;
-    color: rgb(67, 65, 65);
+    color: rgb(160, 180, 86);
+}
+
+.smallerContent {
+    font-size: 2vh;
+    animation: ease-in;
+    color: rgb(221, 221, 221);
+    width: 90%;
+    margin: auto;
 }
 
 .popup {
@@ -62,4 +102,27 @@
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+    z-index: 1000;
+}
+
+.cross {
+    cursor: pointer;
+    font-size: 3vh;
+    float: right;
+    padding-right: 0.8vh;
+    margin-top: 0.5vh;
+}
+
+.popup_title {
+    margin-top: 5vh;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.popup_content {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 1.5vh;
+    text-align: left;
+    font-weight: 400;
 }

@@ -10,10 +10,28 @@ function Schedule(props) {
     <div className={classes.mainContainer} id="schedule">
       <div className={classes.title}>Schedule</div>
       <div className={classes.buttons}>
-        <Button className={classes.button} onClick={() => setShowDayNumber(0)}>
+        <Button
+          className={classes.button}
+          onClick={() => setShowDayNumber(0)}
+          style={{
+            background:
+              showDayNumber === 0
+                ? "rgba(255, 255, 255, 0.7)"
+                : "rgba(255, 255, 255, 0.3)",
+          }}
+        >
           Saturday
         </Button>
-        <Button className={classes.button} onClick={() => setShowDayNumber(1)}>
+        <Button
+          className={classes.button}
+          onClick={() => setShowDayNumber(1)}
+          style={{
+            background:
+              showDayNumber === 1
+                ? "rgba(255, 255, 255, 0.7)"
+                : "rgba(255, 255, 255, 0.3)",
+          }}
+        >
           Sunday
         </Button>
       </div>

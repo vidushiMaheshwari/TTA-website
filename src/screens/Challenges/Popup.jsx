@@ -13,10 +13,18 @@ function Popup(props) {
     }, [props.show]);
 
     return (
-        <div style={{display: (props.show === true) ? 'block': 'none'}} className={classes.popup} onClick={() => props.setShow(false)}>
-            HELLO
+      <div
+        style={{ display: props.show === true ? "block" : "none" }}
+        className={classes.popup}
+      >
+        <div className={classes.cross} onClick={() => props.setShow(false)}>
+          {" "}
+          ❌{" "}
         </div>
-    )    
+        <div className={classes.popup_title}>{props.title}</div>
+        <div className={classes.popup_content}>{props.content}</div>
+      </div>
+    );    
 }
 
 export default Popup;
